@@ -45,4 +45,5 @@ public class SimpleFormPage extends BasePage {
     public void clickOnGetSumButton(){
         getSum.click();
     }
+
 }
