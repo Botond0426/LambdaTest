@@ -15,7 +15,7 @@ public class CheckBoxPage extends BasePage{
     private WebElement singleCheckbox;
 
     public void clickOnSingleCheckbox() {singleCheckbox.click();}
-    @FindBy(id="<input type=\"checkbox\" class=\"mr-10\">")
+    @FindBy(css = "#__next > div > section.mt-30 > div > div > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > input")
     private WebElement singleCheckbox2;
 
     public void clickOnSingleCheckbox2() {singleCheckbox2.click();}
@@ -28,4 +28,27 @@ public class CheckBoxPage extends BasePage{
 
     public void clickOnCheckAllButton() {
         checkAllButton.click();}
+    @FindBy(css = "#ex1-check1")
+    private WebElement option1;
+
+    public void clickOnOption1(){
+    option1.click();}
+    @FindBy(css = "#ex1-check2")
+    private WebElement option2;
+
+    public void clickOnOption2(){
+        option2.click();
+    }
+    @FindBy(css = "#ex1-check3")
+    private WebElement option3;
+
+    public void clickOnOption3(){
+        option3.click();
+    }
+    @FindBy(xpath = "//*[@id=\"ex1-check3\"]")
+    private WebElement option4;
+
+    public void clickOnOption4(){
+        option4.click();
+    }
 }
